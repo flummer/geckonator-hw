@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Geckonator-rescue)(type Legacy)(uri ${KIPRJMOD}/Geckonator-rescue.lib)(options "")(descr ""))
+  (lib (name efm32hg309)(type Legacy)(uri ${KIPRJMOD}/efm32hg309.lib)(options "")(descr ""))
+)

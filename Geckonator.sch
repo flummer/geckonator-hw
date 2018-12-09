@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:efm32hg309
+EESchema Schematic File Version 4
 LIBS:Geckonator-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -38,14 +8,14 @@ Sheet 1 1
 Title "Geckonator"
 Date "$Id$"
 Rev ""
-Comp "hackmeister.dk"
-Comment1 "License: CC-BY-SA"
+Comp "https://geckonator.dk"
+Comment1 "License: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C_Small C2
+L device:C_Small C2
 U 1 1 5798B89B
 P 6125 3975
 F 0 "C2" H 6135 4045 50  0000 L CNN
@@ -56,7 +26,7 @@ F 3 "" H 6125 3975 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5798BA02
 P 6200 4175
 F 0 "#PWR01" H 6200 3925 50  0001 C CNN
@@ -67,7 +37,7 @@ F 3 "" H 6200 4175 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L device:C_Small C3
 U 1 1 5798BA32
 P 7000 3850
 F 0 "C3" H 7010 3920 50  0000 L CNN
@@ -78,7 +48,7 @@ F 3 "" H 7000 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L device:C_Small C1
 U 1 1 5798BCD7
 P 5725 4025
 F 0 "C1" V 5675 4075 50  0000 L CNN
@@ -97,7 +67,7 @@ VCC3V3
 Text Label 5825 3025 0    39   ~ 0
 USB_5V
 $Comp
-L R_Small R3
+L device:R_Small R3
 U 1 1 5798C3BC
 P 5650 3100
 F 0 "R3" V 5625 3175 50  0000 L CNN
@@ -108,7 +78,7 @@ F 3 "" H 5650 3100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R4
+L device:R_Small R4
 U 1 1 5798C529
 P 5650 3175
 F 0 "R4" V 5625 3250 50  0000 L CNN
@@ -119,7 +89,7 @@ F 3 "" H 5650 3175 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X04 P2
+L Geckonator-rescue:CONN_01X04 P2
 U 1 1 5798E965
 P 2450 3925
 F 0 "P2" H 2450 4175 50  0000 C CNN
@@ -134,7 +104,7 @@ DBG_SWCLK
 Text Label 3425 3950 0    39   ~ 0
 DBG_SWDIO
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5798EEB6
 P 2700 4125
 F 0 "#PWR02" H 2700 3875 50  0001 C CNN
@@ -145,7 +115,7 @@ F 3 "" H 2700 4125 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR03
+L power:+3V3 #PWR03
 U 1 1 5798EF1D
 P 6000 3575
 F 0 "#PWR03" H 6000 3425 50  0001 C CNN
@@ -156,7 +126,7 @@ F 3 "" H 6000 3575 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR04
+L power:+3V3 #PWR04
 U 1 1 5798F04E
 P 2700 3725
 F 0 "#PWR04" H 2700 3575 50  0001 C CNN
@@ -167,7 +137,7 @@ F 3 "" H 2700 3725 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L Geckonator-rescue:LED D1
 U 1 1 5798F0D5
 P 3325 2425
 F 0 "D1" H 3450 2475 50  0000 C CNN
@@ -178,7 +148,7 @@ F 3 "" H 3325 2425 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D2
+L Geckonator-rescue:LED D2
 U 1 1 5798F173
 P 3550 2425
 F 0 "D2" H 3675 2475 50  0000 C CNN
@@ -189,7 +159,7 @@ F 3 "" H 3550 2425 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R2
+L device:R_Small R2
 U 1 1 5798F38A
 P 3825 2175
 F 0 "R2" V 3900 2125 50  0000 L CNN
@@ -200,7 +170,7 @@ F 3 "" H 3825 2175 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R1
+L device:R_Small R1
 U 1 1 5798F3FD
 P 3825 2025
 F 0 "R1" V 3750 1975 50  0000 L CNN
@@ -211,7 +181,7 @@ F 3 "" H 3825 2025 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X04 P1
+L Geckonator-rescue:CONN_01X04 P1
 U 1 1 5798FD61
 P 2100 3125
 F 0 "P1" H 2100 3375 50  0000 C CNN
@@ -222,7 +192,7 @@ F 3 "" H 2100 3125 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 5798FD6B
 P 2350 3325
 F 0 "#PWR05" H 2350 3075 50  0001 C CNN
@@ -233,7 +203,7 @@ F 3 "" H 2350 3325 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR06
+L power:+3V3 #PWR06
 U 1 1 5798FD73
 P 2350 2925
 F 0 "#PWR06" H 2350 2775 50  0001 C CNN
@@ -258,7 +228,7 @@ RUSB_D-
 Text Label 5500 3175 0    8    ~ 0
 RUSB_D+
 $Comp
-L +3V3 #PWR07
+L power:+3V3 #PWR07
 U 1 1 579B6568
 P 3450 2675
 F 0 "#PWR07" H 3450 2525 50  0001 C CNN
@@ -269,7 +239,7 @@ F 3 "" H 3450 2675 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L EFM32HG309 U1
+L efm32hg309:EFM32HG309 U1
 U 1 1 5798B6D7
 P 4400 4175
 F 0 "U1" H 4350 4125 60  0000 C CNN
@@ -280,7 +250,7 @@ F 3 "" H 4400 4175 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3350 6125 3350
+	5500 3350 5750 3350
 Wire Wire Line
 	5750 3625 5500 3625
 Connection ~ 5750 3350
@@ -294,15 +264,15 @@ Wire Wire Line
 	5950 4025 5950 4125
 Connection ~ 6125 4125
 Wire Wire Line
-	6125 3350 6125 3875
+	6125 3350 6125 3625
 Wire Wire Line
-	5750 3350 5750 3925
+	5750 3350 5750 3625
 Wire Wire Line
 	5550 3100 5500 3100
 Wire Wire Line
 	5500 3175 5550 3175
 Wire Wire Line
-	5500 3025 6350 3025
+	5500 3025 6300 3025
 Wire Wire Line
 	5750 3100 6200 3100
 Wire Wire Line
@@ -316,7 +286,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3175 5750 3175
 Wire Wire Line
-	5500 4125 7000 4125
+	5500 4125 5950 4125
 Wire Wire Line
 	7000 4125 7000 3950
 Wire Wire Line
@@ -365,7 +335,7 @@ Connection ~ 6350 4125
 Wire Wire Line
 	3450 2675 3450 2625
 Wire Wire Line
-	3325 2625 3550 2625
+	3325 2625 3450 2625
 Connection ~ 3450 2625
 Wire Wire Line
 	3725 2175 3550 2175
@@ -412,7 +382,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3125 4200 3125
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 57A1602A
 P 4030 4035
 F 0 "#PWR08" H 4030 3785 50  0001 C CNN
@@ -427,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	4030 4025 4030 4035
 $Comp
-L USB_A P3
+L Geckonator-rescue:USB_A P3
 U 1 1 587A59FD
 P 6650 3225
 F 0 "P3" V 6630 3413 50  0000 L CNN
@@ -438,7 +408,7 @@ F 3 "" V 6600 3125 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 P4
+L Geckonator-rescue:CONN_01X02 P4
 U 1 1 587A9872
 P 4400 4450
 F 0 "P4" H 4478 4491 50  0000 L CNN
@@ -449,7 +419,7 @@ F 3 "" H 4400 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 587A9986
 P 4025 4600
 F 0 "#PWR09" H 4025 4350 50  0001 C CNN
@@ -474,7 +444,7 @@ Wire Wire Line
 Wire Wire Line
 	3225 3075 2300 3075
 $Comp
-L CONN_02X03 P5
+L Geckonator-rescue:CONN_02X03 P5
 U 1 1 587AAF85
 P 3225 4900
 F 0 "P5" H 3225 5215 50  0000 C CNN
@@ -533,7 +503,7 @@ PE13
 Text Label 3800 5000 2    39   ~ 0
 PE12
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 587AA2E1
 P 6750 3625
 F 0 "#PWR?" H 6750 3375 50  0001 C CNN
@@ -545,4 +515,28 @@ F 3 "" H 6750 3625 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6750 3525 6750 3625
+Wire Wire Line
+	5750 3350 6125 3350
+Wire Wire Line
+	5750 3625 5750 3700
+Wire Wire Line
+	6200 4125 6350 4125
+Wire Wire Line
+	6125 4125 6200 4125
+Wire Wire Line
+	6300 3025 6350 3025
+Wire Wire Line
+	5750 3700 5750 3775
+Wire Wire Line
+	5750 3775 5750 3850
+Wire Wire Line
+	5750 3850 5750 3925
+Wire Wire Line
+	5950 4125 6125 4125
+Wire Wire Line
+	6125 3625 6125 3875
+Wire Wire Line
+	6350 4125 7000 4125
+Wire Wire Line
+	3450 2625 3550 2625
 $EndSCHEMATC
