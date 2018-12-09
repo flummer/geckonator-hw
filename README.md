@@ -10,6 +10,24 @@ These boards are in part inspired by [Thumbinator][thumbinator] and the [Tomu][t
 [tomu]: https://github.com/im-tomu/tomu-hardware
 
 ## Hardware
-The initial version of the hardware ws a small thumbdrive sized board with a male USB A connectot directly on the board and only a few LEDs.
+The initial version of the hardware (found in this repository) is a small thumbdrive sized board with a male USB A connector directly on the board and only two LEDs.
 
-The next version is a larger board, with a few more components, higher pincount microcontroller and a lerger prototyping area for adding other stuff.
+The next version ([Geckonator Dev Edition][geckonator-dev]) is a larger board, with a few more components, higher pincount microcontroller and a larger prototyping area for adding other stuff.
+
+[geckonator-dev]: https://github.com/flummer/geckonator-dev
+
+## Firmware
+
+This board is designed for the development of the [Geckoboot bootloader][geckoboot], and for developing applications for this, the [Geckonator][geckonator] repository can be used as a base
+
+[geckoboot]: https://github.com/flummer/geckoboot
+[geckonator]: https://github.com/flummer/geckonator
+
+## License
+
+The contents of this repository is released under the following licence:
+
+ * the "Creative Commons Attribution-ShareAlike 4.0 International License"
+   (CC BY-SA 4.0) full text of this license is included in the LICENSE file
+   and a copy can also be found at
+   http://creativecommons.org/licenses/by-sa/4.0/
